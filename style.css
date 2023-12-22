@@ -1,0 +1,142 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+:root {
+    --orange : #FF4A52;
+    --aqua : #1EC6B6;
+}
+
+
+ .nav-item.dropdown:hover .dropdown-menu {
+    
+    background-color: #FF4A52;
+}
+.header-carousel {
+    height: 90vh;
+}
+.carousel-caption h5 {
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 100px;
+}
+.logo, .phone {
+    border-right: 2px solid rgb(217, 214, 214);
+}
+.btn-padding{
+    padding: 40px;
+}
+.bg-orng ,.bg-aqua:hover {
+    background-color: var(--orange);
+}
+.bg-aqua, .bg-orng:hover {
+    background-color: var(--aqua);
+}
+.dest-btn-font {
+    font-size: .7rem;
+}
+.filter {
+    filter: brightness(70%);
+}
+.hover-effect{
+    color: white;
+}
+
+.hover-effect{
+    transition: all .3s ease-in;
+}
+.hover-effect:hover{
+    transform: translateY(-10px);
+}
+.hover-effect:hover, .hover3:hover h4, footer a:hover{
+    color:var(--orange);
+}
+.hover-effect:hover .bg-aqua {
+    background-color: var(--orange);
+}
+.places-bg {
+    height: 250px;
+    background-image: url("images/newsletter.png");
+    background-size: cover;
+}.icons{
+    font-size: 12px;
+}.popular-bg{
+    background-color: #f2f2f2;
+}.hover2:hover .bg-aqua {
+    background-color: var(--orange);
+}
+.hover2:hover h4{
+    color: var(--orange);
+}.hover2:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}.video-bg {
+    height: 500px;
+    background-image: url("images/video/video.png");
+    background-size: cover;
+}.enjoy p {
+    font-size: 4rem;
+    font-family: "Nothing You Could Do", cursive;
+    font-style: italic;
+}.play-size {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    animation: move 1s infinite;
+}@keyframes move {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }100%{
+        opacity: 0;
+        transform: scale(2);
+    }
+}.indicator ul{
+    list-style-type: none;
+}
+.indicator li.active{
+    color: #FF4A52;
+}
+.img-container{
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    position: relative;
+}
+.img-container i{
+    position: absolute;
+    font-size: 2rem;
+    background-color: var(--aqua);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: -20px;
+}
+.yup img{
+    height: 100%;
+    padding: 5px;
+    width: 100%;
+    border-radius: 20px;
+}
+.icons2 {
+    font-size: 16px;
+}
+@media screen and (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 50px;
+    }
+  }
+@media screen and (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 75px;
+    }
+  }
+@media screen and (max-width:991px) {
+    .vr {
+        display: none;
+    }
+   .icon{
+    display: none;
+   }
+  }

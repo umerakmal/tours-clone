@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png.webp" alt="..." style="width:130px;" class="ms-4 pe-4">
+                </a>
+                <div class="vr"></div>
+                <button class="navbar-toggler flex-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px;">
+                        <li class="nav-item" class="mt-lg-4">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Destination</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav icon">
+
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-sm-inline me-3" href="#"><i class="fa-solid fa-phone"></i>
+                                10(256)-928 256</a>
+
+                        </li>
+                        <div class="vr"></div>
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-sm-inline me-3" href="#"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-sm-inline me-3" href="#"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-sm-inline me-3" href="#"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-sm-inline me-3" href="#"><i
+                                    class="fa-brands fa-google-plus-g"></i></a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                </div>
+                <div class="search">
+                    <button type="button" class="bg-orng text-white border-0 btn-padding" data-bs-toggle="modal"
+                        data-bs-target="#myModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body d-flex">
+                                    <input type="text" class="w-75 border-0" placeholder="Search">
+                                    <button class="btn w-25 bg-orng text-white py-3">search</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- carousel -->
+    <div class="container-fluid  p-0 header-carousel">
+        <div id="crsl1" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-indicators d-none">
+                <button type="button" data-bs-target="#crsl1" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#crsl1" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#crsl1" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active">
+                    <img src="./images/banner/banner.png.webp" class="d-block w-100 h-100" alt="...">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h5 class="display-1">Indonesia</h5>
+                        <p>Pixel perfect design with awesome contents</p>
+                        <button class="btn bg-aqua px-4 py-3 text-white mt-4">Explore Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="./images/banner/banner2.png.webp" class="d-block w-100 h-100" alt="...">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h5 class="display-1">Australia</h5>
+                        <p>Pixel perfect design with awesome contents</p>
+                        <button class="btn bg-aqua px-4 py-3 text-white mt-4">Explore Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="./images/banner/banner3.png.webp" class="d-block w-100 h-100" alt="...">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h5 class="display-1">Switzerland</h5>
+                        <p>Pixel perfect design with awesome contents</p>
+                        <button class="btn bg-aqua px-4 py-3 text-white mt-4">Explore Now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#crsl1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#crsl1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0 bg-dark">
+        <div class="container">
+            <div class="row text-white py-5">
+                <div class="col-12 col-sm-12 col-md-12 mb-2">
+                    <h4>Where you want to go?</h4>
+                </div>
+                <form action="#" class="col row">
+                    <div class="col-12 col-sm-6 col-md-3 mb-2">
+                        <input type="text" class="form-control p-3" placeholder="Where to go?">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-2">
+                        <input type="date" class="form-control p-3" placeholder="Date">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-3">
+                        <select class="form-select p-3">
+                            <option>National</option>
+                            <option>International</option>
+                        </select>
+                    </div>
+                    <button class="btn bg-orng px-4 py-3 text-white col-4 mb-3 p-2 col-sm-6 col-md-3">Explore
+                        Now</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container destinations mb-5">
+        <div class="destination-hd w-50 my-5 mx-auto text-center px-2">
+            <h3 class="mb-3">Popular Destination</h3>
+            <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf
+                moon beard words.</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card hover-effect ">
+                    <img class="card-img-top object-fit-cover filter" src="images/destinantion/1.png.webp"
+                        alt="Card image">
+                    <div class="card-img-overlay d-flex align-items-end m-2">
+                        <span class="card-title h4 my-0 mx-1">Italy</span>
+                        <button class="btn bg-aqua text-white rounded-pill dest-btn-font">07 places</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card hover-effect">
+                    <img class="card-img-top object-fit-cover filter" src="images/destinantion/2.png.webp"
+                        alt="Card image">
+                    <div class="card-img-overlay d-flex align-items-end m-2">
+                        <span class="card-title h4 my-0 mx-1">Brazil</span>
+                        <button class="btn bg-aqua text-white rounded-pill  dest-btn-font">03 places</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card hover-effect">
+                    <img class="card-img-top object-fit-cover filter" src="images/destinantion/3.png.webp"
+                        alt="Card image">
+                    <div class="card-img-overlay d-flex align-items-end m-2">
+                        <span class="card-title h4 my-0 mx-1">America</span>
+                        <button class="btn bg-aqua text-white rounded-pill dest-btn-font">10 places</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card hover-effect">
+                    <img class="card-img-top object-fit-cover filter" src="images/destinantion/4.png.webp"
+                        alt="Card image">
+                    <div class="card-img-overlay d-flex align-items-end m-2">
+                        <span class="card-title h4 my-0 mx-1">Nepal</span>
+                        <button class="btn bg-aqua text-white rounded-pill dest-btn-font">02 places</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card hover-effect">
+                    <img class="card-img-top object-fit-cover filter" src="images/destinantion/5.png.webp"
+                        alt="Card image">
+                    <div class="card-img-overlay d-flex align-items-end m-2">
+                        <span class="card-title h4 my-0 mx-1">Maldives</span>
+                        <button class="btn bg-aqua text-white rounded-pill dest-btn-font">02 places</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card hover-effect">
+                    <img class="card-img-top object-fit-cover filter" src="images/destinantion/6.png.webp"
+                        alt="Card image">
+                    <div class="card-img-overlay d-flex align-items-end m-2">
+                        <span class="card-title my-0 mx-1 h4 ">Indonesia</span>
+                        <button class="btn bg-aqua text-white rounded-pill dest-btn-font">05 places</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0 places-bg">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row">
+                <div class="col-10 col-sm-10 col-md-5 offset-md-1">
+                    <h4>Subscribe Our Newsletter</h4>
+                    <p>Subscribe newsletter to get offers and about new places to discover.</p>
+                </div>
+                <div class="col-10 col-sm-8 col-md-4 mt-2">
+                    <input type="text" class="form-control p-2" placeholder="Your mail">
+                </div>
+                <div class="col-10 col-sm-3 col-md-2 mt-2">
+                    <button class="btn bg-orng px-3 py-2 text-white w-100">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid popular-bg">
+        <div class="container py-5">
+            <div class="text-center">
+                <h2 class="pt-5">Popular Places</h2>
+                <p class="mb-5">Suffered alteration in some form, by injected humour or good day <br> randomised booth
+                    anim 8-bit hella wolf moon beard words.</p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card border-0 rounded-0 hover2">
+                        <card class="img position-relative">
+                            <img src="./images/places/1.png.webp" alt="" style="width: 100%;">
+                            <button
+                                class="bg-aqua btn text-white rounded-pill m-3 position-absolute top-0 start-0">500$</button>
+                        </card>
+                        <div class="card-title m-0">
+                            <h4 class="mt-3 ms-3">California</h4>
+                        </div>
+                        <div class="card-body  p-0 m-0">
+                            <p class="mx-3">united state of amarica</p>
+                            <div class="father d-flex justify-content-between">
+                                <div class="icons mx-3 mb-3 mt-1">
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <span>(20 reviews)</span>
+                                </div>
+                                <div class="icons1 m-0 p-0">
+                                    <span class="icons mx-2">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>5 days</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card  border-0 rounded-0 hover2">
+                        <card class="img position-relative">
+                            <img src="./images/places/2.png.webp" alt="" style="width: 100%;">
+                            <button
+                                class="bg-aqua btn text-white rounded-pill m-3 position-absolute top-0 start-0">500$</button>
+                        </card>
+                        <div class="card-title m-0">
+                            <h4 class="mt-3 ms-3">Korola Megna</h4>
+                        </div>
+                        <div class="card-body  p-0 m-0">
+                            <p class="mx-3">united state of amarica</p>
+                            <div class="father d-flex justify-content-between">
+                                <div class="icons mx-3 mb-3 mt-1">
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <span>(20 reviews)</span>
+                                </div>
+                                <div class="icons1 m-0 p-0">
+                                    <span class="icons mx-2">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>5 days</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card border-0 rounded-0 hover2">
+                        <card class="img position-relative">
+                            <img src="./images/places/3.png.webp" alt="" style="width: 100%;">
+                            <button
+                                class="bg-aqua btn text-white rounded-pill m-3 position-absolute top-0 start-0">500$</button>
+                        </card>
+                        <div class="card-title m-0">
+                            <h4 class="mt-3 ms-3">London</h4>
+                        </div>
+                        <div class="card-body  p-0 m-0">
+                            <p class="mx-3">united state of amarica</p>
+                            <div class="father d-flex justify-content-between">
+                                <div class="icons mx-3 mb-3 mt-1">
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <span>(20 reviews)</span>
+                                </div>
+                                <div class="icons1 m-0 p-0">
+                                    <span class="icons mx-2">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>5 days</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card  border-0 rounded-0 hover2">
+                        <card class="img position-relative">
+                            <img src="./images/places/1.png.webp" alt="" style="width: 100%;">
+                            <button
+                                class="bg-aqua btn text-white rounded-pill m-3 position-absolute top-0 start-0">500$</button>
+                        </card>
+                        <div class="card-title m-0">
+                            <h4 class="mt-3 ms-3">Miami Beach</h4>
+                        </div>
+                        <div class="card-body  p-0 m-0">
+                            <p class="mx-3">united state of amarica</p>
+                            <div class="father d-flex justify-content-between">
+                                <div class="icons mx-3 mb-3 mt-1">
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <span>(20 reviews)</span>
+                                </div>
+                                <div class="icons1 m-0 p-0">
+                                    <span class="icons mx-2">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>5 days</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card  border-0 rounded-0 hover2">
+                        <card class="img position-relative">
+                            <img src="./images/places/1.png.webp" alt="" style="width: 100%;">
+                            <button
+                                class="bg-aqua btn text-white rounded-pill m-3 position-absolute top-0 start-0">500$</button>
+                        </card>
+                        <div class="card-title m-0">
+                            <h4 class="mt-3 ms-3">California</h4>
+                        </div>
+                        <div class="card-body  p-0 m-0">
+                            <p class="mx-3">united state of amarica</p>
+                            <div class="father d-flex justify-content-between">
+                                <div class="icons mx-3 mb-3 mt-1">
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <span>(20 reviews)</span>
+                                </div>
+                                <div class="icons1 m-0 p-0">
+                                    <span class="icons mx-2">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>5 days</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card border-0 rounded-0 hover2">
+                        <card class="img position-relative">
+                            <img src="./images/places/1.png.webp" alt="" style="width: 100%;">
+                            <button
+                                class="bg-aqua btn text-white rounded-pill m-3 position-absolute top-0 start-0">500$</button>
+                        </card>
+                        <div class="card-title m-0">
+                            <h4 class="mt-3 ms-3">Saintemartine Iceland</h4>
+                        </div>
+                        <div class="card-body  p-0 m-0">
+                            <p class="mx-3">united state of amarica</p>
+                            <div class="father d-flex justify-content-between">
+                                <div class="icons mx-3 mb-3 mt-1">
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(230, 135, 10);"></i>
+                                    <span>(20 reviews)</span>
+                                </div>
+                                <div class="icons1 m-0 p-0">
+                                    <span class="icons mx-2">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>5 days</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center my-5">
+                <button class="bg-orng py-3 px-5 btn text-white mt-5 ">More Places</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0 video-bg d-flex justify-content-center align-items-center flex-column">
+        <div class="enjoy">
+            <p class="text-white">Enjoy Video</p>
+        </div>
+        <div class="play">
+            <button type="button" class="btn bg-aqua  rounded-circle text-white play-size" data-bs-toggle="modal"
+                data-bs-target="#modal2">
+                <i class="fa-solid fa-play ps-2"></i>
+            </button>
+            <div class="modal fade" id="modal2">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content bg-transparent border-0">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <iframe width="770" height="440"
+                                src="https://www.youtube.com/embed/f59dDEk57i0?si=NERYnJPCSsZFgdhR"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card border-0 p-4">
+                    <div class="text-center">
+                        <img class="card-img-top" src="images/svg/1.svg" alt="Title" style="height: 60px; width: 60px;">
+                    </div>
+                    <div class="mt-4 card-body">
+                        <h4 class="card-title mb-2">Comfortable Journey</h4>
+                        <p class="card-text">A wonderful serenity has taken to the possession of my entire soul.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card border-0 p-4">
+                    <div class="text-center">
+                        <img class="card-img-top" src="images/svg/2.svg" alt="Title" style="height: 60px; width: 60px;">
+                    </div>
+                    <div class="mt-4 card-body">
+                        <h4 class="card-title mb-2">Luxuries Hotel</h4>
+                        <p class="card-text">A wonderful serenity has taken to the possession of my entire soul.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card border-0 p-4">
+                    <div class="text-center">
+                        <img class="card-img-top" src="images/svg/3.svg" alt="Title" style="height: 60px; width: 60px;">
+                    </div>
+                    <div class="mt-4 card-body">
+                        <h4 class="card-title mb-2">Travel Guide</h4>
+                        <p class="card-text">A wonderful serenity has taken to the possession of my entire soul.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid p-0 popular-bg py-5">
+        <div class="carousel slide" id="crsl2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" aria-current="true">
+                    <div class="card w-50 m-auto text-center bg-transparent border-0">
+                        <div class="caed-image-top m-auto img-container">
+                            <img src="images/author.png" alt="">
+                            <i class="fa-solid fa-quote-left d-flex justify-content-center align-items-center"></i>
+                        </div>
+                        <div class="card-body  mt-4">
+                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
+                                help alleviate human suffering.</p>
+                        </div>
+                        <div class="card-title">
+                            <p>-Jeery Mouse</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card w-50 m-auto text-center bg-transparent border-0">
+                        <div class="card-image-top m-auto img-container">
+                            <img src="images/author.png" alt="">
+                            <i class="fa-solid fa-quote-left d-flex justify-content-center align-items-center"></i>
+                        </div>
+                        <div class="card-body mt-4">
+                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
+                                help alleviate human suffering.</p>
+                        </div>
+                        <div class="card-title">
+                            <p>-Jeery Mouse</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="card w-50 m-auto text-center bg-transparent border-0">
+                        <div class="card-image-top m-auto img-container">
+                            <img src="images/author.png" alt="">
+                            <i class="fa-solid fa-quote-left d-flex justify-content-center align-items-center"></i>
+                        </div>
+                        <div class="card-body mt-4">
+                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to
+                                help alleviate human suffering.</p>
+                        </div>
+                        <div class="card-title">
+                            <p>-Jeery Mouse</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <ul class="carousel-indicator indicator d-flex justify-content-center">
+                <div id="one">
+                    <li data-bs-target="#crsl2" data-bs-slide-to="0" class=" indicate" id="one"></li>
+                </div>
+
+                <div id="two">
+                    <li data-bs-target="#crsl2" data-bs-slide-to="1" class="ms-3 indicate " id="two"></li>
+                </div>
+
+                <div id="three">
+                    <li data-bs-target="#crsl2" data-bs-slide-to="2" class="ms-3 indicate " id="three"></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card border-0 hover3">
+                    <img class="card-image-top rounded-2" src="images/trip/1.png.webp" alt="">
+                    <p class="card-text my-3">Oct 12, 2019</p>
+                    <h4 class="card-title">Journeys Are Best Measured In New Friends</h4>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card border-0 hover3">
+                    <img class="card-image-top rounded-2" src="images/trip/2.png (1).webp" alt="">
+                    <p class="card-text my-3">Oct 12, 2019</p>
+                    <h4 class="card-title">Journeys Are Best Measured In New Friends</h4>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card border-0 hover3">
+                    <img class="card-image-top rounded-2" src="images/trip/3.png.webp" alt="">
+                    <p class="card-text my-3">Oct 12, 2019</p>
+                    <h4 class="card-title">Journeys Are Best Measured In New Friends</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark p-0 footer">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border-0 bg-transparent">
+                        <img src="./images/footer_logo.png" alt="" class=" w-50 h-100 py-5">
+                    </div>
+                    <div class="card bg-transparent border-0">
+                        <a href="" class="text-secondary text-decoration-none mb-2">5th flora, 700/D kings road,
+                            green</a>
+                        <a href="" class="text-secondary text-decoration-none mb-2">lane New York-1782</a>
+                        <a href="" class="text-secondary text-decoration-none mb-2 hover4">+10 367 826 2567</a>
+                        <a href="" class="text-secondary text-decoration-none mb-2 hover4">contact@carpenter.com</a>
+                    </div>
+                    <div class="icons2 text-secondary mt-3">
+                        <i class="fa-brands fa-facebook-f me-2"></i>
+                        <i class="fa-brands fa-twitter  me-2"></i>
+                        <i class="fa-brands fa-instagram  me-2"></i>
+                        <i class="fa-brands fa-pinterest  me-2"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card py-5 text-white bg-transparent border-0">
+                        <h3>Company</h3>
+                    </div>
+                    <div class="card bg-transparent border-0">
+                        <a href="" class="text-secondary text-decoration-none mb-2 hover4">Pricing</a>
+                        <a href="" class="text-secondary text-decoration-none mb-2 hover4">About</a>
+                        <a href="" class="text-secondary text-decoration-none mb-2 hover4">Gallery</a>
+                        <a href="" class="text-secondary text-decoration-none mb-2 hover4">Contact</a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card py-5 text-white bg-transparent border-0">
+                        <h3>Popular Destination</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card bg-transparent border-0">
+                                <a href="" class="text-secondary text-decoration-none mb-2 hover4">Indonesia</a>
+                                <a href="" class="text-secondary text-decoration-none mb-2 hover4">India</a>
+                                <a href="" class="text-secondary text-decoration-none mb-2 hover4">Italy</a>
+                                <a href="" class="text-secondary text-decoration-none mb-2 hover4">France</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card bg-transparent border-0">
+                                <a href="" class="text-secondary text-decoration-none mb-2 hover4">America</a>
+                                <a href="" class="text-secondary text-decoration-none mb-2 hover4">Canada</a>
+                                <a href="" class="text-secondary text-decoration-none mb-2 hover4">Switzerland</a>
+                                <a href="" class="text-secondary text-decoration-none mb-2 hover4">England</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card py-5 text-white border-0 bg-transparent">
+                        <h3>Instagram</h3>
+                    </div>
+                    <div class="row yup">
+                        <div class="col-4 mb-2 p-2">
+                            <img src="./images/trip/1.png.webp" alt="">
+                        </div>
+                        <div class="col-4 mb-2 p-2">
+                            <img src="./images/trip/2.png (1).webp" alt="">
+                        </div>
+                        <div class="col-4 mb-2 p-2">
+                            <img src="./images/trip/3.png.webp" alt="">
+                        </div>
+                        <div class="col-4 mb-2 p-2">
+                            <img src="./images/trip/2.png (1).webp" alt="">
+                        </div>
+                        <div class="col-4 mb-2 p-2">
+                            <img src="./images/trip/3.png.webp" alt="">
+                        </div>
+                        <div class="col-4 mb-2 p-2">
+                            <img src="./images/trip/1.png.webp" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-secondary border-top text-center pt-4 pb-3">
+                <p>Copyright ©2023 All rights reserved | This template is made with by Colorlib</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
